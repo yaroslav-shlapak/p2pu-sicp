@@ -20,6 +20,11 @@
 		      (- count 1)))))
   (iter 0 1 2 n))
 
+;; (f2 2)
+;; (iter 0 1 2 2) -> 4
+;; (iter 1 2 4 1) -> 11
+;; (iter 2 4 11 0) -> 2
+
 ;; The same, with slight change to avoid 2 unnecessary calculations of c
 (define (f2 n)
   (define (iter a b c count) ; zeroth, first, second, counter
